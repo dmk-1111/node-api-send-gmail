@@ -1,0 +1,40 @@
+# Dependencies (Never commit these; they are re-installed via package.json)
+node_modules/
+jspm_packages/
+web_modules/
+
+# Local Environment Secrets (Contains private API keys, database credentials)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs and Diagnostics
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Test Coverage Output
+coverage/
+.nyc_output/
+
+# Build and Compilation Artifacts (e.g., Next.js, Nuxt, TypeScript caches)
+dist/
+build/
+.next/
+.nuxt/
+.out/
+*.tsbuildinfo
+
+# IDE and OS Files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+.DS_Store
+Thumbs.db
