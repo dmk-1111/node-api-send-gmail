@@ -12,7 +12,9 @@ const transporter = nodemailer.createTransport({
     pass: process.env.GMAIL_APP_PASSWORD,
   },
 });
-
+app.get('/', (req, res) => {
+  res.send('Email API is running...');
+});
 app.post('/send', async (req, res) => {
     try {
         const { to, subject, text, html } = req.body;
